@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade | Alphaview Imóveis</title>
+<meta name="description" content="Política de Privacidade da Alphaview Imóveis, incluindo o atendimento automatizado por WhatsApp.">
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  :root{
+    --bg:#0d0c0c;
+    --bg-nav:#1a1817;
+    --gold:#e0b964;
+    --gold-dark:#c99f45;
+    --text:#e8e6e3;
+    --muted:#9a9691;
+    --line:rgba(224,185,100,0.18);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+
+  /* NAV */
+  nav{
+    position:sticky;top:0;z-index:100;background:var(--bg-nav);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 2rem;height:86px;
+  }
+  .nav-logo img{height:52px;width:auto;display:block;}
+  .nav-links{display:flex;align-items:center;gap:2rem;list-style:none;}
+  .nav-links a{color:#fff;text-decoration:none;font-size:1rem;font-weight:500;transition:color .25s;}
+  .nav-links a:hover{color:var(--gold);}
+  .btn-wpp{
+    display:inline-flex;align-items:center;gap:.5rem;
+    background:var(--gold);color:#1a1817 !important;font-weight:600;
+    padding:.65rem 1.4rem;border-radius:6px;text-decoration:none;transition:background .25s;
+  }
+  .btn-wpp:hover{background:var(--gold-dark);color:#1a1817 !important;}
+  .btn-wpp svg{width:18px;height:18px;fill:currentColor;}
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+  .hamburger span{display:block;width:26px;height:2px;background:var(--gold);}
+
+  /* CONTEUDO */
+  .wrap{max-width:860px;margin:0 auto;padding:4rem 1.75rem 5rem;}
+  h1{
+    font-size:clamp(1.9rem,4vw,2.6rem);font-weight:600;color:#fff;
+    text-align:center;letter-spacing:.01em;margin-bottom:.75rem;
+  }
+  .date{text-align:center;color:var(--muted);font-size:.9rem;margin-bottom:3rem;}
+  h2{
+    font-size:1.2rem;font-weight:600;color:var(--gold);
+    margin:2.75rem 0 .85rem;
+  }
+  p{margin-bottom:1.1rem;color:var(--text);font-size:1rem;}
+  ul{margin:0 0 1.1rem 1.4rem;}
+  li{margin-bottom:.5rem;}
+  a{color:var(--gold);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .25s;}
+  .wrap a:hover{border-color:var(--gold);}
+
+  /* RODAPE */
+  footer{
+    background:#111010;border-top:1px solid rgba(255,255,255,0.06);
+    padding:3.5rem 2rem 2rem;
+  }
+  .foot-grid{
+    max-width:1200px;margin:0 auto;display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;
+  }
+  .foot-logo img{height:84px;width:auto;margin-bottom:1.25rem;}
+  .foot-social{display:flex;gap:1rem;}
+  .foot-social a{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:34px;height:34px;border:1px solid var(--gold);border-radius:6px;
+  }
+  .foot-social svg{width:17px;height:17px;fill:var(--gold);}
+  .foot-col h3{color:var(--gold);font-size:1rem;font-weight:600;margin-bottom:1.1rem;}
+  .foot-col ul{list-style:none;margin:0;}
+  .foot-col li{margin-bottom:.75rem;}
+  .foot-col a{color:var(--text);font-size:.95rem;}
+  .foot-col a:hover{color:var(--gold);}
+  .foot-phone{display:flex;align-items:center;gap:.5rem;color:var(--text);font-size:.95rem;}
+  .foot-phone svg{width:17px;height:17px;fill:var(--gold);flex-shrink:0;}
+  .foot-base{
+    max-width:1200px;margin:3rem auto 0;padding-top:1.5rem;
+    border-top:1px solid rgba(255,255,255,0.06);
+    text-align:center;color:var(--muted);font-size:.8rem;line-height:1.8;
+  }
+
+  @media(max-width:900px){
+    nav{padding:0 1.25rem;height:72px;}
+    .nav-logo img{height:42px;}
+    .hamburger{display:flex;}
+    .nav-links{
+      display:none;position:absolute;top:72px;left:0;right:0;
+      flex-direction:column;align-items:flex-start;gap:1.25rem;
+      background:var(--bg-nav);padding:1.5rem;border-bottom:1px solid var(--line);
+    }
+    .nav-links.open{display:flex;}
+    .foot-grid{grid-template-columns:1fr;gap:2rem;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="https://alphaviewimoveis.com.br/" class="nav-logo"><img src="logo.png" alt="Alphaview Imóveis"></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="https://alphaviewimoveis.com.br/">Início</a></li>
+    <li><a href="https://alphaviewimoveis.com.br/imoveis?businessType=sell">Comprar</a></li>
+    <li><a href="https://alphaviewimoveis.com.br/imoveis?businessType=rent">Alugar</a></li>
+    <li><a href="https://alphaviewimoveis.com.br/sobre">Sobre</a></li>
+    <li><a href="https://alphaviewimoveis.com.br/anuncie-seu-imovel">Anuncie seu imóvel</a></li>
+    <li>
+      <a class="btn-wpp" target="_blank" rel="noopener" href="https://wa.me/5541999282935?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20algumas%20d%C3%BAvidas%20sobre%20os%20im%C3%B3veis.%20Poderia%20me%20ajudar%3F">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.073.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+        Contatar
+      </a>
+    </li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="wrap">
+  <h1>Política de Privacidade</h1>
+  <p class="date">Última atualização: 22 de novembro de 2026</p>
+
+  <h2>1. Quem somos</h2>
+  <p>A Alphaview Imóveis é uma imobiliária sediada em Curitiba, Paraná, inscrita no CRECI sob o nº J-10422 e registrada sob o CNPJ 61.749.325/0001-66 (Costa e Vedoy Imóveis Ltda.). Somos a controladora dos dados pessoais tratados em nossos canais de atendimento, nos termos da Lei nº 13.709/2018 (LGPD).</p>
+  <p>Esta política explica quais dados coletamos quando você entra em contato conosco, para que os usamos, com quem eles são compartilhados e quais são os seus direitos.</p>
+
+  <h2>2. Quais dados coletamos</h2>
+  <p>Coletamos apenas os dados que você nos fornece voluntariamente ao entrar em contato, por WhatsApp, telefone, e-mail ou formulário do site, tais como nome, número de telefone, endereço de e-mail e o conteúdo das mensagens trocadas.</p>
+  <p>Não exigimos cadastro para consultar imóveis e não compramos listas de contatos.</p>
+
+  <h2>3. Para que usamos seus dados</h2>
+  <p>Usamos seus dados exclusivamente para atender à sua solicitação: responder dúvidas sobre imóveis, enviar informações e materiais, agendar visitas, conduzir negociações e dar continuidade ao relacionamento iniciado por você.</p>
+  <p>A base legal é o art. 7º, V, da LGPD, por se tratar de procedimento preliminar relacionado a contrato do qual você é parte. Não utilizamos seus dados para publicidade dirigida nem para formação de perfil comportamental, e não os vendemos.</p>
+
+  <h2>4. Atendimento automatizado por WhatsApp</h2>
+  <p>Nosso atendimento pelo WhatsApp pode ser iniciado por um assistente virtual automatizado, que utiliza inteligência artificial para responder às primeiras perguntas e direcionar o contato. O assistente se identifica como automatizado e nunca se apresenta como pessoa.</p>
+  <p>A qualquer momento você pode pedir para falar com um corretor, e o atendimento passa a ser humano, sem que você precise repetir o que já informou.</p>
+  <p>Para que esse atendimento funcione, o conteúdo das mensagens é processado pela plataforma oficial do WhatsApp Business, fornecida pela Meta Platforms, Inc., e pelo serviço de inteligência artificial fornecido pela Anthropic PBC, que gera as respostas. Ambas atuam como operadoras e tratam os dados apenas para viabilizar o atendimento.</p>
+  <p>O histórico da conversa fica guardado em banco de dados sob nossa administração, identificado pelo seu número de telefone, para que possamos retomar o atendimento de onde parou caso você volte a nos procurar.</p>
+
+  <h2>5. Compartilhamento e transferência internacional</h2>
+  <p>Não vendemos nem cedemos seus dados. O compartilhamento ocorre apenas com os prestadores de serviço necessários ao atendimento, listados acima, e nas hipóteses legalmente previstas, como cumprimento de ordem judicial ou requisição de autoridade competente.</p>
+  <p>Quando o imóvel é de terceiros, como proprietários ou construtoras parceiras, seus dados de contato podem ser compartilhados com eles apenas na medida necessária para viabilizar a visita ou a negociação que você solicitou.</p>
+  <p>A Meta Platforms, Inc. e a Anthropic PBC estão sediadas nos Estados Unidos, e o servidor onde guardamos o histórico das conversas está localizado na Finlândia. Há, portanto, transferência internacional de dados, realizada com fundamento no art. 33, VIII, da LGPD e amparada nas cláusulas contratuais firmadas com esses fornecedores.</p>
+
+  <h2>6. Por quanto tempo guardamos</h2>
+  <p>O histórico de conversas do atendimento é mantido por 12 (doze) meses contados da última interação, sendo eliminado em seguida. Dados relacionados a negócios efetivamente celebrados são mantidos pelos prazos exigidos pela legislação aplicável.</p>
+  <p>Você pode solicitar a eliminação antecipada a qualquer momento, pelo contato indicado no item 9.</p>
+
+  <h2>7. Segurança</h2>
+  <p>Adotamos medidas técnicas e organizacionais razoáveis para proteger seus dados contra acesso não autorizado, perda ou destruição, incluindo acesso restrito aos sistemas e conexões criptografadas. Comunicações realizadas por canais externos, como WhatsApp e e-mail, também estão sujeitas às políticas de privacidade dos respectivos provedores.</p>
+
+  <h2>8. Seus direitos</h2>
+  <p>Nos termos da LGPD, você pode a qualquer momento:</p>
+  <ul>
+    <li>confirmar se tratamos dados seus e acessá-los;</li>
+    <li>corrigir dados incompletos, inexatos ou desatualizados;</li>
+    <li>solicitar a eliminação dos seus dados;</li>
+    <li>solicitar informação sobre com quem os compartilhamos;</li>
+    <li>revogar o consentimento, quando for essa a base do tratamento;</li>
+    <li>opor-se a tratamento que considere irregular.</li>
+  </ul>
+  <p>Atendemos essas solicitações sem custo e no menor prazo possível.</p>
+
+  <h2>9. Contato</h2>
+  <p>Para exercer seus direitos ou tirar dúvidas sobre esta política, escreva para <a href="mailto:alphaviewimoveis@gmail.com">alphaviewimoveis@gmail.com</a> ou fale conosco pelo WhatsApp (41) 99928-2935.</p>
+  <p>Em razão do porte das nossas atividades, não há encarregado de dados formalmente designado, e as solicitações são tratadas diretamente pelo contato acima.</p>
+
+  <h2>10. Alterações</h2>
+  <p>Esta política pode ser atualizada a qualquer momento. A versão vigente é sempre a publicada nesta página, com a data de atualização indicada no topo.</p>
+</div>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-logo">
+      <img src="logo.png" alt="Alphaview Imóveis">
+      <div class="foot-social">
+        <a href="https://alphaviewimoveis.com.br/" aria-label="Site" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.93 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14A7.9 7.9 0 014 12c0-.69.1-1.36.26-2h3.38a16.6 16.6 0 000 4H4.26zm.81 2h2.95c.32 1.25.78 2.45 1.38 3.56A8 8 0 015.07 16zm2.95-8H5.07a8 8 0 014.33-3.56A15.65 15.65 0 008.02 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66a14.9 14.9 0 010-4h4.68a14.9 14.9 0 010 4zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8 8 0 01-4.33 3.56zM16.36 14a16.6 16.6 0 000-4h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/alphaviewimoveis" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.9h2.78l-.45 2.91h-2.33V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/alphaviewimoveis" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23a3.8 3.8 0 01-.9 1.38c-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 01-1.38-.9 3.8 3.8 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm7.85-10.4a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+        </a>
+        <a href="mailto:alphaviewimoveis@gmail.com" aria-label="E-mail">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="foot-col">
+      <h3>Alphaview Imóveis</h3>
+      <ul>
+        <li><a href="https://alphaviewimoveis.com.br/anuncie-seu-imovel">Anuncie seu imóvel</a></li>
+        <li><a href="https://alphaviewimoveis.com.br/sobre">Sobre</a></li>
+        <li><a href="https://alphaviewimoveis.com.br/imoveis?businessType=sell">Imóveis para venda</a></li>
+        <li><a href="https://alphaviewimoveis.com.br/imoveis?businessType=rent">Imóveis para locação</a></li>
+        <li><a href="https://alphaviewimoveis.com.br/termos-de-uso">Termos de uso</a></li>
+        <li><a href="https://privacidade.alphaviewimoveis.com.br/">Política de Privacidade</a></li>
+      </ul>
+    </div>
+
+    <div class="foot-col">
+      <h3>Matriz</h3>
+      <div class="foot-phone">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        <a href="https://wa.me/5541999282935" target="_blank" rel="noopener">(41) 99928-2935</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot-base">
+    Alphaview Imóveis · CRECI J-10422 · CNPJ 61.749.325/0001-66 · Curitiba, PR
+  </div>
+</footer>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', function(){
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
